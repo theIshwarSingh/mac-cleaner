@@ -45,6 +45,9 @@ npm version patch            # bumps package.json and creates the tag
 git push --follow-tags       # the workflow builds and publishes the release
 ```
 
+If the tag lands in the same push as a brand-new workflow file, GitHub may
+not start the run; open Actions → Release → Run workflow and pick the tag.
+
 ## Quick start
 
 ```bash
