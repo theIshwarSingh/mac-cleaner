@@ -1,0 +1,7 @@
+node_modules/
+dist/
+# Scan reports and cleanup logs describe this machine's files. They live in ~/.mac-cleaner, never here.
+data/
+*.log
+.DS_Store
+build/

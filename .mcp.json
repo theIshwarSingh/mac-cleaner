@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mac-cleaner": {
+      "command": "npx",
+      "args": ["-y", "tsx", "${CLAUDE_PLUGIN_ROOT}/src/mcp.ts"]
+    }
+  }
+}

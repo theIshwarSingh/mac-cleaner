@@ -1,0 +1,35 @@
+{
+  "name": "mac-cleaner",
+  "version": "0.1.0",
+  "description": "Open CleanMyMac-style cleaner for macOS: junk scan, uninstaller, privacy, maintenance, Space Lens. CLI, local web UI, and MCP server.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "mac-cleaner": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/cli.ts serve",
+    "scan": "tsx src/cli.ts scan",
+    "mcp": "tsx src/mcp.ts",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "app": "bash scripts/build-app.sh"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "hono": "^4.7.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
