@@ -14,7 +14,7 @@ import { MODULE_IDS, formatFindings, formatSummary, loadReport, mergeReports, pa
  * MCP server so Claude (and its subagents) can drive mac-cleaner.
  * Every destructive tool defaults to a dry run and requires `confirm: true`.
  */
-const server = new McpServer({ name: "mac-cleaner", version: "0.1.0" });
+const server = new McpServer({ name: "mac-cleaner", version: "1.0.0" });
 
 const text = (s: string) => ({ content: [{ type: "text" as const, text: s }] });
 const json = (x: unknown) => text(JSON.stringify(x, null, 2));

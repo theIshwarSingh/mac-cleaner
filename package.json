@@ -1,6 +1,6 @@
 {
   "name": "mac-cleaner",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Open CleanMyMac-style cleaner for macOS: junk scan, uninstaller, privacy, maintenance, Space Lens. CLI, local web UI, and MCP server.",
   "private": true,
   "type": "module",
